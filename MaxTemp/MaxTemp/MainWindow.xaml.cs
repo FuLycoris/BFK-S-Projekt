@@ -37,21 +37,20 @@ namespace MaxTemp
         private void BtnAuswerten_Click(object sender, RoutedEventArgs e)
         {
             //Zugriff auf Datei erstellen.
-
+            string[] tmp = sender.ToString().Split(':');
             //Anfangswert setzen, um sinnvoll vergleichen zu können.
-
+            string name = sensor.Text;
 
             //In einer Schleife die Werte holen und auswerten. Den größten Wert "merken".
 
 
             //Datei wieder freigeben.
 
-
             //Höchstwert auf Oberfläche ausgeben.
 
-            MessageBox.Show("Gleich kachelt das Programm...");
+            MessageBox.Show(name);
             //kommentieren Sie die Exception aus.
-            throw new Exception("peng");
+            //throw new Exception("peng");
         }
     }
 }
